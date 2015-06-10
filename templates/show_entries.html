@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>My Contacts</title>
+</head>
+<body align="center">
+<h3>Hello admin your Posts are:</h3><a href="add">Add Post</a>
+<br/><br/><br/>
+<table align="center" width="400px" height="auto">
+	<tr>
+		<th>Post</th>
+		<th>Description</th>
+	</tr>
+{% for i in data %}
+	<tr align="center">
+		<td>{{ i.title }}</td>
+		<td>{{ i.text }}</td>
+	</tr>
+{% endfor %}
+</table>
+</body>
+</html>
